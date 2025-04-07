@@ -29,6 +29,7 @@ in
     microsoft-edge
     firefox
     teams
+    ripgrep
 
     # Fonts
     (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })

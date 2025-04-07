@@ -30,7 +30,7 @@
       };
     in
     {
-      homeConfigurations.aoantov = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.wamu = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         modules = [
@@ -41,7 +41,7 @@
         ];
       };
 
-      aoantov = self.homeConfigurations.aoantov.activationPackage;
-      defaultPackage.${system} = self.aoantov;
+      wamu = self.homeConfigurations.wamu.activationPackage;
+      defaultPackage.${system} = self.wamu;
     };
 }
