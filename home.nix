@@ -70,7 +70,7 @@
   #
   #  /etc/profiles/per-user/aoantov/etc/profile.d/hm-session-vars.sh
   #
-  git = {
+  home.git = {
       enable = true;
       package = pkgs.gitFull;
       userEmail = "anton.antov@softwareone.com";

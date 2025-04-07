@@ -13,5 +13,5 @@ in
     enable = true;
     withPython3 = true;
     withNodeJs = true;
-    plugins = with pkgs.vimPlugins; []
+  };
 }
