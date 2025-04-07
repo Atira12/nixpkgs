@@ -8,57 +8,32 @@ let
 in
 {
   home.packages = with pkgs; [
-    # utilities
+    # Utilities
     (python3.withPackages (
       p: with p; [
         pip
-        python-lsp-server
-        debugpy
-        ruff-lsp
-        setuptools
-        wheel
       ]
     ))
-    lazygit
-    neovide
-    neovim-qt
-    nix-info
-    nixfmt-rfc-style
-    gnumake
     pyenv
     gcc
     wget
-
-    # Azure
-    azure-cli
-    ansible
+    curl
 
     # AWS
     awscli2
     awsume
 
-    # k8s
+    # General
+    fzf
+    jira-cli-go
+    microsoft-edge
+    firefox
+    teams
+
+    # K8S
     kubectl
 
-    # lsp
-    #clang
-    #clang-tools
-    nodejs
-    nodePackages.npm
-    pyright
-    rust-analyzer
-    gopls
-    lua-language-server
-    terraform-lsp
-    nixd
-    kotlin-language-server
-    ktlint
-
-    # linters
-    ruff
-    yamllint
-
-    # telescope deps
-    ripgrep
+    # Terraform
+    tfswitch
   ];
 }
