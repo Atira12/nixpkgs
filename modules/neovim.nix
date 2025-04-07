@@ -5,13 +5,13 @@
   ...
 }:
 let
-  nixConfigDir = "${config.home.homeDirectory}/.config/home-manager";
+  lazyConfig = "${config.home.homeDirectory}";
 in
 {
   programs.neovim = {
-    version = "0.10.4";
     enable = true;
     withPython3 = true;
     withNodeJs = true;
   };
+  xdg.configFile."nvim".source = config.lib.file.mkOutOfStoreSymlink "${lazyConfig}";
 }

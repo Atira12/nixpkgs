@@ -32,7 +32,7 @@ in
     ripgrep
 
     # Fonts
-    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+    nerd-fonts.jetbrains-mono
 
     # K8S
     kubectl
