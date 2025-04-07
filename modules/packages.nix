@@ -23,6 +23,9 @@ in
     awscli2
     awsume
 
+    # JS
+    volta
+
     # General
     fzf
     jira-cli-go
@@ -39,5 +42,7 @@ in
 
     # Terraform
     tfswitch
+    jetbrains.idea-ultimate
+     
   ];
 }

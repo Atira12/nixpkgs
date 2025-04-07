@@ -5,7 +5,7 @@
   ...
 }:
 let
-  lazyConfig = "${config.home.homeDirectory}";
+  lazyConfig = "${config.home.homeDirectory}/lazynvim";
 in
 {
   programs.neovim = {
