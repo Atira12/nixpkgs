@@ -9,7 +9,7 @@ let
 in
 {
   programs.neovim = {
-    version = "0.10.4"
+    version = "0.10.4";
     enable = true;
     withPython3 = true;
     withNodeJs = true;
