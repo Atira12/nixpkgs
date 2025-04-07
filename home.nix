@@ -70,9 +70,15 @@
   #
   #  /etc/profiles/per-user/aoantov/etc/profile.d/hm-session-vars.sh
   #
-  home.sessionVariables = {
-    # EDITOR = "emacs";
-  };
+  git = {
+      enable = true;
+      package = pkgs.gitFull;
+      userEmail = "anton.antov@softwareone.com";
+      userName = "aoantov";
+      extraConfig = {
+        core.editor = "vim";
+      };
+    };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;

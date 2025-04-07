@@ -30,7 +30,7 @@
       };
     in
     {
-      homeConfigurations.stefan = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.aoantov = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         modules = [
@@ -41,7 +41,7 @@
         ];
       };
 
-      stefan = self.homeConfigurations.stefan.activationPackage;
-      defaultPackage.${system} = self.stefan;
+      aoantov = self.homeConfigurations.aoantov.activationPackage;
+      defaultPackage.${system} = self.aoantov;
     };
 }

@@ -30,10 +30,14 @@ in
     firefox
     teams
 
+    # Fonts
+    (nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+
     # K8S
     kubectl
 
     # Terraform
     tfswitch
+    terraform@1.6.1
   ];
 }
