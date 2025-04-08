@@ -70,6 +70,8 @@
   #
   #  /etc/profiles/per-user/aoantov/etc/profile.d/hm-session-vars.sh
   #
+  home.shell.enableZshIntegration = true;
+
   programs = { 
    git = {
       enable = true;
@@ -81,11 +83,19 @@
       };
     };
  home-manager.enable = true;
- zsh.enable = true;
- zsh.oh-my-zsh = {
+ zsh = {
     enable = true;
-    plugins = ["git"];
+    enableCompletion = true;
+    autosuggestion.enable = true; 
+    oh-my-zsh = {
+    enable = true;
+    plugins = ["git" "docker" "docker-compose"];
     theme = "agnoster";
+  };
+  };
+ fzf = {
+    enable = true;
+    enableZshIntegration = true;
   };
  };
 

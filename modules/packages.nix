@@ -27,7 +27,6 @@ in
     volta
 
     # General
-    fzf
     jira-cli-go
     microsoft-edge
     firefox
@@ -39,7 +38,10 @@ in
 
     # K8S
     kubectl
+    docker
+    docker-compose
 
+    gradle
     # Terraform
     tfswitch
    # jetbrains.idea-ultimate
