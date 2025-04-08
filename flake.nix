@@ -43,5 +43,6 @@
 
       wamu = self.homeConfigurations.wamu.activationPackage;
       defaultPackage.${system} = self.wamu;
+      users.defaultUserShell = pkgs.zsh;
     };
 }
