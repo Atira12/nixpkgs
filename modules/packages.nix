@@ -42,7 +42,7 @@ in
 
     # Terraform
     tfswitch
-    jetbrains.idea-ultimate
+   # jetbrains.idea-ultimate
      
   ];
 }

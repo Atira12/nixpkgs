@@ -80,9 +80,14 @@
         core.editor = "vim";
       };
     };
+ home-manager.enable = true;
+ zsh.enable = true;
+ zsh.oh-my-zsh = {
+    enable = true;
+    plugins = ["git"];
+    theme = "agnoster";
+  };
  };
 
   # Let Home Manager install and manage itself.
- programs.home-manager.enable = true;
- programs.zsh.enable = true
 }
