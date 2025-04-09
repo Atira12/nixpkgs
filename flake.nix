@@ -9,13 +9,7 @@
     };
     flake-utils.url = "github:numtide/flake-utils";
   };
-  outputs =
-    {
-      self,
-      home-manager,
-      nixpkgs,
-      ...
-    }:
+  outputs = { self, home-manager, nixpkgs, ... }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -26,8 +20,7 @@
           allowBroken = true;
         };
       };
-    in
-    {
+    in {
       homeConfigurations.wamu = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
@@ -35,6 +28,7 @@
           ./modules/alacritty.nix
           ./modules/neovim.nix
           ./modules/packages.nix
+          ./modules/directory.nix
           ./home.nix
         ];
       };
