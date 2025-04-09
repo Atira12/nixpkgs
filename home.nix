@@ -80,6 +80,7 @@
     };
 
     home-manager.enable = true;
+
     zsh = {
       enable = true;
       enableCompletion = true;

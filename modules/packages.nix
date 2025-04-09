@@ -1,15 +1,7 @@
-{
-  pkgs,
-  ...
-}:
-{
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     # Utilities
-    (python3.withPackages (
-      p: with p; [
-        pip
-      ]
-    ))
+    (python3.withPackages (p: with p; [ pip ]))
     pyenv
     gcc
     wget
@@ -31,7 +23,10 @@
 
     # Fonts
     nerd-fonts.jetbrains-mono
+
+    # Rust
     cargo
+
     # K8S
     kubectl
     docker
@@ -40,7 +35,7 @@
     gradle
     # Terraform
     tfswitch
-   # jetbrains.idea-ultimate
-     
+    # jetbrains.idea-ultimate
+
   ];
 }
