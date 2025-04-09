@@ -14,8 +14,6 @@
       self,
       home-manager,
       nixpkgs,
-      flake-utils,
-      nur,
       ...
     }:
     let

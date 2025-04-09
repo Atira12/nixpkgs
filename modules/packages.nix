@@ -1,11 +1,7 @@
 {
-  config,
   pkgs,
-  libs,
   ...
 }:
-let
-in
 {
   home.packages = with pkgs; [
     # Utilities
@@ -35,7 +31,7 @@ in
 
     # Fonts
     nerd-fonts.jetbrains-mono
-
+    cargo
     # K8S
     kubectl
     docker

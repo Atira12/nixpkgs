@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -50,9 +50,7 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
   };
-  home.sessionVariables = {
-    EDITOR = "nvim";
-  };
+  home.sessionVariables = { EDITOR = "nvim"; };
 
   # Home Manager can also manage your environment variables through
   # 'home.sessionVariables'. These will be explicitly sourced when using a
@@ -72,32 +70,32 @@
   #
   home.shell.enableZshIntegration = true;
 
-  programs = { 
-   git = {
+  programs = {
+    git = {
       enable = true;
       package = pkgs.gitFull;
       userEmail = "anton.antov@softwareone.com";
       userName = "aoantov";
-      extraConfig = {
-        core.editor = "vim";
+      extraConfig = { core.editor = "vim"; };
+    };
+
+    home-manager.enable = true;
+    zsh = {
+      enable = true;
+      enableCompletion = true;
+      autosuggestion = { enable = true; };
+      oh-my-zsh = {
+        enable = true;
+        plugins = [ "git" "docker" "docker-compose" ];
+        theme = "agnoster";
       };
     };
- home-manager.enable = true;
- zsh = {
-    enable = true;
-    enableCompletion = true;
-    autosuggestion.enable = true; 
-    oh-my-zsh = {
-    enable = true;
-    plugins = ["git" "docker" "docker-compose"];
-    theme = "agnoster";
+    fzf = {
+      enable = true;
+      enableZshIntegration = true;
+    };
   };
-  };
- fzf = {
-    enable = true;
-    enableZshIntegration = true;
-  };
- };
 
   # Let Home Manager install and manage itself.
+
 }

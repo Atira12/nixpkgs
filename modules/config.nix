@@ -1,3 +1,5 @@
+{lib, ...}:
+
 {
   allowUnsupportedSystem = true;
   allowUnfree = true;
