@@ -1,6 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
-{
+let homeManagerConfig = "${config.home.homeDirectory}/.config/home-manager";
+in {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "wamu";
@@ -88,7 +89,8 @@
       oh-my-zsh = {
         enable = true;
         plugins = [ "git" "docker" "docker-compose" ];
-        theme = "agnoster";
+        extraConfig =
+          "source ${homeManagerConfig}/configs/zsh/theme.zsh\n         source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme\n          ";
       };
     };
     fzf = {

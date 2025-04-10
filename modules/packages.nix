@@ -32,10 +32,15 @@
     docker
     docker-compose
 
+    # Java
     gradle
+    # jetbrains.idea-ultimate
+
     # Terraform
     tfswitch
-    # jetbrains.idea-ultimate
+
+    # Other
+    zsh-powerlevel10k
 
   ];
 }

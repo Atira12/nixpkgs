@@ -38,7 +38,41 @@
         "type": "github"
       }
     },
+    "lazyConfig": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1744307222,
+        "narHash": "sha256-3QENTFDxGQzXjZTU3lRAiFnWTHdMA/cvXGdJQuOjJjI=",
+        "owner": "atira12",
+        "repo": "lazynvim",
+        "rev": "4790cccbb31dea0092901162725180528ee2c0af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "atira12",
+        "repo": "lazynvim",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
+      "locked": {
+        "lastModified": 1744307452,
+        "narHash": "sha256-obOPApJ5xfPEKD0puxtq40VHBh5AWfHj2VGfJMfaKLg=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a7f55cc91203e5d60dec95a16f9ca8ccfb305f9e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "master",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
       "locked": {
         "lastModified": 1744086312,
         "narHash": "sha256-W//bA9yvn4CsJSQLxNqqmvisd4gYpaPFuslf+GgC6kQ=",
@@ -58,7 +92,8 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "lazyConfig": "lazyConfig",
+        "nixpkgs": "nixpkgs_2"
       }
     },
     "systems": {
