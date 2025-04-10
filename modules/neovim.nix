@@ -1,5 +1,9 @@
 { config, ... }:
-let lazyConfig = "${config.home.homeDirectory}/lazynvim";
+let
+  lazyConfig = builtins.fetchGit {
+    url = "https://github.com/Atira12/lazynvim";
+    rev = "0d3f200300e08f3b217d0ef097ce351879d75b15";
+  };
 in {
   programs.neovim = {
     enable = true;
