@@ -2,7 +2,7 @@
 let
   lazyConfig = builtins.fetchGit {
     url = "https://github.com/Atira12/lazynvim";
-    rev = "0d3f200300e08f3b217d0ef097ce351879d75b15";
+    rev = "2e01a5b99dce6444b1ebeb7be3032c44b6091fde";
   };
 in {
   programs.neovim = {
