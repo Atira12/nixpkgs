@@ -29,6 +29,7 @@
           ./modules/neovim.nix
           ./modules/packages.nix
           ./modules/directory.nix
+          ./modules/firefox.nix
           ./home.nix
         ];
       };
