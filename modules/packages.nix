@@ -17,7 +17,6 @@
     # General
     jira-cli-go
     microsoft-edge
-    firefox
     # teams
     ripgrep
 
