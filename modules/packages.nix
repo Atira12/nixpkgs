@@ -18,7 +18,7 @@
     jira-cli-go
     microsoft-edge
     firefox
-    teams
+    # teams
     ripgrep
 
     # Fonts
