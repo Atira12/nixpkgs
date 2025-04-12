@@ -40,6 +40,7 @@
 
     # Other
     zsh-powerlevel10k
+    postman
 
   ];
 }
