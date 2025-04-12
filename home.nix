@@ -89,8 +89,11 @@ in {
       oh-my-zsh = {
         enable = true;
         plugins = [ "git" "docker" "docker-compose" ];
-        extraConfig =
-          "\n          source ${homeManagerConfig}/configs/zsh/theme.zsh\n          source ${config.home.homeDirectory}/custom.zsh     \n          source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme \n          ";
+        extraConfig = ''
+          source ${homeManagerConfig}/configs/zsh/theme.zsh
+          source ${config.home.homeDirectory}/custom.zsh     
+          source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme 
+        '';
       };
     };
     fzf = {

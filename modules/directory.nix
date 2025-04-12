@@ -1,1 +1,1 @@
-{ config, ... }: { xdg.userDirs = { createDirectories = true; }; }
+{ ... }: { xdg.userDirs = { createDirectories = true; }; }
